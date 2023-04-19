@@ -1,4 +1,5 @@
 
+
 #include <TFT_eSPI.h>
 #include "NotoSansBold15.h"
 #include "NotoSansBold36.h"
@@ -77,7 +78,7 @@ int segments=0;
 const int pwmFreq = 5000;
 const int pwmResolution = 8;
 const int pwmLedChannelTFT = 0;
-int segments=0;
+
 
 CST816S touch(TOUCH_SDA, TOUCH_SCL, TOUCH_RST, TOUCH_INT); // sda, scl, rst, irq
 
@@ -182,7 +183,7 @@ void draw()
 
   // ........................................needles draw
    sA=speedAngle*1.2;
-   rA=2*rpmAngle*1.6;
+  
 
     sprite.drawWedgeLine(px[(int)sA],py[(int)sA],nx[(int)sA],ny[(int)sA],3,3,needleColor);
   
